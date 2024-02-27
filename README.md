@@ -112,11 +112,6 @@ The general syntax and meaning of types is the following:
 A formal semantics of object protocols is given in
 [CrafaPadovani17].
 
-Download
---------
-
-* [EasyJoin 1.0](EasyJoin-1.0.tar.gz) - first public release (2019-01-10)
-
 Installation instructions
 -------------------------
 
