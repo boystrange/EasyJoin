@@ -18,3 +18,24 @@
 │ Copyright 2019 Luca Padovani                                      ║
 ╘═══════════════════════════════════════════════════════════════════╝
 -}
+
+module Aux where
+
+nothing :: Maybe a -> Bool
+nothing Nothing = True
+nothing _ = False
+
+limit :: Eq a => (a -> a) -> a -> a
+limit f x | x == y = x
+          | otherwise = limit f y
+  where
+    y = f x
+
+choose :: [[a]] -> [[a]]
+choose [] = [[]]
+choose (xs : xss) = [ x : ys | x <- xs, ys <- choose xss ]
+
+split :: Eq a => a -> [a] -> [[a]]
+split x xs = case span (/= x) xs of
+               (ys, []) -> [ys]
+               (ys, _ : xs') -> ys : split x xs'

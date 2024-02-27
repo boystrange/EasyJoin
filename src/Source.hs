@@ -18,3 +18,32 @@
 │ Copyright 2019 Luca Padovani                                      ║
 ╘═══════════════════════════════════════════════════════════════════╝
 -}
+
+module Source where
+
+import qualified Language.Java.Syntax as Java
+
+type Tag = String
+data MessageType = Asyn [Java.Modifier] [Java.FormalParam]
+                 | Esyn [Java.Modifier] (Maybe Java.Type)
+                 | Sync [Java.Modifier] (Maybe Java.Type) [Java.FormalParam]
+  deriving Eq
+
+data Annotation = NoAnnotation
+                | Synchronous
+                | Asynchronous
+                | Esynchronous
+                | Chord
+                | Protocol String
+
+type Signature = [(Tag, MessageType)]
+
+asynchronous :: Signature -> Tag -> Bool
+asynchronous σ = not . synchronous σ
+
+synchronous :: Signature -> Tag -> Bool
+synchronous σ tag =
+  case lookup tag σ of
+    Just (Sync _ _ _) -> True
+    _ -> False
+

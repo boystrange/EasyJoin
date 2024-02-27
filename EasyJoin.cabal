@@ -1,0 +1,36 @@
+name:                EasyJoin
+version:             1.0
+synopsis:            Join Pattern Code Generator
+description:         Concurrent Typestate-Oriented Programming in Java
+homepage:            http://www.di.unito.it/~padovani/Software/EasyJoin
+license:             GPL-3
+license-file:        LICENSE
+author:              Luca Padovani
+maintainer:          luca.padovani@unito.it
+copyright:           (c) 2019 Luca Padovani
+category:            Concurrency
+build-type:          Simple
+extra-source-files:  ChangeLog.md,
+                     README.md,
+                     Makefile,
+                     examples/Makefile,
+                     examples/*.join.java
+cabal-version:       >=1.10
+
+executable EasyJoin
+  main-is:             Main.hs
+  other-modules:       Aux,
+                       Automaton,
+                       Java,
+                       Source,
+                       Type,
+                       TypeParser,
+                       Compiler
+  -- other-extensions:
+  build-depends:       base >=4.11,
+                       language-java >=0.2,
+                       containers >=0.5,
+                       parsec >=3.1,
+                       filepath >=1.4
+  hs-source-dirs:      src
+  default-language:    Haskell2010
