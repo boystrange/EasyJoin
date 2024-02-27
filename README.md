@@ -1,13 +1,3 @@
-Title:	Concurrent Typestate-Oriented Programming in Java
-Author:	Luca Padovani
-html header:
-	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Mono"/>
-	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-CSS:	EasyJoin.css
-
 EasyJoin – Concurrent Typestate-Oriented Programming in Java
 ============================================================
 
