@@ -135,4 +135,4 @@ will generate all classes and the corresponding matching automata
 
 [CrafaPadovani17]: Silvia Crafa and Luca Padovani: [The Chemical Approach to Typestate-Oriented Programming](http://dx.doi.org/10.1145/3064849), ACM Transactions on Programming Languages and Systems, 2017.
 
-[GerboPadovani19]: Rosita Gerbo and Luca Padovani: Concurrent Typestate-Oriented Programming in Java, to appear.
+[GerboPadovani19]: Rosita Gerbo and Luca Padovani: [Concurrent Typestate-Oriented Programming in Java](http://dx.doi.org/10.4204/EPTCS.291.3), Proceedings of PLACES, 2019.
