@@ -1,21 +1,16 @@
 EasyJoin – Concurrent Typestate-Oriented Programming in Java
 ============================================================
 
-* [Overview][]
-* [Object Protocols][]
-* [Download][]
-* [Installation instructions][]
-
 Overview
 --------
 
-TypeState-Oriented Programming (TSOP) [#AldrichEtAl09] is a
+TypeState-Oriented Programming (TSOP) [AldrichEtAl09] is a
 programming methodology for implementing objects with a
 state-sensitive public interface. Common examples of such objects
 are *iterators*, *files*, and *containers*. Concurrent TSOP
-[#CrafaPadovani17] is an extension of TSOP to *concurrent objects*
+[CrafaPadovani17] is an extension of TSOP to *concurrent objects*
 such as *locks*, *future variables*, *barriers*, and the like.
-EasyJoin [#GerboPadovani19] is a _code generator_ that allows Java
+EasyJoin [GerboPadovani19] is a _code generator_ that allows Java
 programmers to use concurrent TSOP when implementing and using
 object with state-sensitive interfaces. Below is an example of Java
 class for future variables written using concurrent TSOP and
@@ -115,7 +110,7 @@ The general syntax and meaning of types is the following:
   exception.
 
 A formal semantics of object protocols is given in
-[#CrafaPadovani17].
+[CrafaPadovani17].
 
 Download
 --------
@@ -136,8 +131,8 @@ generator. The `examples` folder contains a few examples of
 will generate all classes and the corresponding matching automata
 (`dot` is necessary to produce the PDFs of the automata).
 
-[#AldrichEtAl09]: Jonathan Aldrich, Joshua Sunshine, Darpan Saini and Zachary Sparks: [Typestate-Oriented Programming](http://dx.doi.org/10.1145/1639950.1640073), Proceedings of OOPSLA, 2009.
+[AldrichEtAl09]: Jonathan Aldrich, Joshua Sunshine, Darpan Saini and Zachary Sparks: [Typestate-Oriented Programming](http://dx.doi.org/10.1145/1639950.1640073), Proceedings of OOPSLA, 2009.
 
-[#CrafaPadovani17]: Silvia Crafa and Luca Padovani: [The Chemical Approach to Typestate-Oriented Programming](http://dx.doi.org/10.1145/3064849), ACM Transactions on Programming Languages and Systems, 2017.
+[CrafaPadovani17]: Silvia Crafa and Luca Padovani: [The Chemical Approach to Typestate-Oriented Programming](http://dx.doi.org/10.1145/3064849), ACM Transactions on Programming Languages and Systems, 2017.
 
-[#GerboPadovani19]: Rosita Gerbo and Luca Padovani: Concurrent Typestate-Oriented Programming in Java, to appear.
+[GerboPadovani19]: Rosita Gerbo and Luca Padovani: Concurrent Typestate-Oriented Programming in Java, to appear.
