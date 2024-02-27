@@ -126,6 +126,9 @@ generator. The `examples` folder contains a few examples of
 will generate all classes and the corresponding matching automata
 (`dot` is necessary to produce the PDFs of the automata).
 
+References
+----------
+
 [AldrichEtAl09]: Jonathan Aldrich, Joshua Sunshine, Darpan Saini and Zachary Sparks: [Typestate-Oriented Programming](http://dx.doi.org/10.1145/1639950.1640073), Proceedings of OOPSLA, 2009.
 
 [CrafaPadovani17]: Silvia Crafa and Luca Padovani: [The Chemical Approach to Typestate-Oriented Programming](http://dx.doi.org/10.1145/3064849), ACM Transactions on Programming Languages and Systems, 2017.
